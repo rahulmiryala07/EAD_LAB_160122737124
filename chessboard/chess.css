@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image:url('chesspic.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 80px;
+    color: #fff;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 5px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    display: contents;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+}
+
+.black {
+    background-color: #000;
+}
+
+.white {
+    background-color: #ffff;
+}
